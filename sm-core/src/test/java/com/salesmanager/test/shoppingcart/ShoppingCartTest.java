@@ -235,7 +235,6 @@ public class ShoppingCartTest extends com.salesmanager.test.common.AbstractSales
 	    item.setShoppingCart(shoppingCart);
 	    
 	    FinalPrice price = pricingService.calculateProductPrice(product);
-	    Product refreshed = productService.getByCode("TB12345", en); productService.delete(refreshed);
 	    
 	    //FinalPrice price = productPriceUtil.getFinalPrice(product);
 	    
@@ -282,7 +281,7 @@ public class ShoppingCartTest extends com.salesmanager.test.common.AbstractSales
 	    Product deletedProduct = productService.getById(product.getId());
 	    
 	    productService.delete(deletedProduct);
-	    
+	    Product refreshed = productService.getByCode("TB12345", en); productService.delete(refreshed);
 	    
 	    //TODO delete product
 	    //expect shopping cart to be deleted since no products are attached
