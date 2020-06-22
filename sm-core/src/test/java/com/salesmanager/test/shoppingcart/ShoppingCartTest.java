@@ -54,6 +54,7 @@ public class ShoppingCartTest extends com.salesmanager.test.common.AbstractSales
         
 		
 	    Language en = languageService.getByCode("en");
+	    Product refreshed = productService.getByCode("TB12345", en); productService.delete(refreshed);
 
 
 	    /** CATALOG CREATION **/
