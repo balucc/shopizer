@@ -235,6 +235,7 @@ public class ShoppingCartTest extends com.salesmanager.test.common.AbstractSales
 	    item.setShoppingCart(shoppingCart);
 	    
 	    FinalPrice price = pricingService.calculateProductPrice(product);
+	    Product refreshed = productService.getByCode("TB12345", en); productService.delete(refreshed);
 	    
 	    //FinalPrice price = productPriceUtil.getFinalPrice(product);
 	    
