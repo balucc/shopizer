@@ -154,14 +154,14 @@ public class ShoppingCartTest extends com.salesmanager.test.common.AbstractSales
 	    /**
 	     * Create a complex product
 	     */
-	    Product product = new Product();
+	   /** Product product = new Product();
 	    product.setProductHeight(new BigDecimal(4));
 	    product.setProductLength(new BigDecimal(3));
 	    product.setProductWidth(new BigDecimal(1));
 	    product.setSku("TB12345");
 	    product.setManufacturer(addidas);
 	    product.setType(generalType);
-	    product.setMerchantStore(store);
+	    product.setMerchantStore(store);*/
 
 	    // Product description
 	    ProductDescription description = new ProductDescription();
@@ -281,7 +281,7 @@ public class ShoppingCartTest extends com.salesmanager.test.common.AbstractSales
 	    Product deletedProduct = productService.getById(product.getId());
 	    
 	    productService.delete(deletedProduct);
-	    Product refreshed = productService.getByCode("TB12345", en); productService.delete(refreshed);
+	   
 	    
 	    //TODO delete product
 	    //expect shopping cart to be deleted since no products are attached
