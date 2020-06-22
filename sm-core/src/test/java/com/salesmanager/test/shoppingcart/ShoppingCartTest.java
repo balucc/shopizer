@@ -154,14 +154,14 @@ public class ShoppingCartTest extends com.salesmanager.test.common.AbstractSales
 	    /**
 	     * Create a complex product
 	     */
-	   /** Product product = new Product();
+	    Product product = new Product();
 	    product.setProductHeight(new BigDecimal(4));
 	    product.setProductLength(new BigDecimal(3));
 	    product.setProductWidth(new BigDecimal(1));
 	    product.setSku("TB12345");
 	    product.setManufacturer(addidas);
 	    product.setType(generalType);
-	    product.setMerchantStore(store);*/
+	    product.setMerchantStore(store);
 
 	    // Product description
 	    ProductDescription description = new ProductDescription();
